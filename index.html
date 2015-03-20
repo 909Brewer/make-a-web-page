@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Tom Hedy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Introduction To Programming Notes</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="h1">Introduction To Programming Notes</div>
+			<div class="introduction">
+				<div class="welcome">
+					<p>
+						Thanks for taking the time drop in and spending some time with me on my journey from a complete and utter novice, to someone with enough knowledge to be dangerous and mess something up!
+
+						The following are my personal notes gleaned from the lecture.
+					</p>
+				</div>
+					<div class="picture">
+					<img src="http://i58.tinypic.com/zlyjr6.png" alt="I Have No Idea">
+				</div>
+			<div class="h2">Unit 1 Lesson 1: The Nitty Gritty of the Web</div>
+				<div class="h3">Components of the Web</div>
+				<div class="text">
+					<p>
+						There are four main components commonly used to describe the "web".
+						The most common point of access for an individual is their personal computer with a <em>web browser(1)</em>, such as Chrome or Firefox. 
+						Most users will communicate their request through the <em>Internet(2)</em>, which is the largest computer network, via an Internet protocol. 
+						The most common Internet protocol is <em>HTTP(3)</em>, which is a protocol that allows the computer to speak with <em>Servers(4)</em>. 
+						Servers are in essence computers which have been optimized to store and host large amounts of data which are regularly accessed.
+					</p>
+					<p>
+						<a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">Understanding The Web</a> breaks it down fairly well in and easy to understand no nonsense explanation. 
+					</p>
+				</div>
+				<div class="h3">HTML</div>
+				<div class="text">
+					<p>
+						<em>Hyper Text Markup Language</em> makes up the bulk of online documents. Anything can exist on the web, however HTML will be the most prolific type of document you will find.</p>
+					<p>
+						What HTML is made of: <br>
+						1.-- Text content (what you see on the page)<br>
+						2.-- Markup (what the content "looks" like)<br>
+						3.-- References to other documents (images, videos)<br>
+						4.-- Links to other pages
+					</p>
+				</div>
+				<div class="h3">HTML Markup and Elements</div>
+				<div class="text">
+					<p>
+						The whole markup; opening tag, content, and closing tag, is referred to as an element. A body containing "nested"tags, or multiple tags inside of each other, is perfectly acceptable. A very simple and generic example would be:
+					</p>
+					<p>
+						&lt;name&gt;contents&lt;/name&gt;</p>
+					<p>
+						Some common examples of tags would be:</p>
+					<p>
+						&lt;em&gt; - <em>emphasis</em></p>
+					<p>
+						&lt;b&gt; - <b>bold</b></p>
+					<p>
+						This is a great video demonstrating <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">HTML Markup</a>.
+					</p>
+				</div>
+				<div class="h3">HTML Attributes</div>
+				<div class="text">
+					<p>
+						Attributes provide additional information about HTML elements such as defining an image, or establishing a link.
+						This is typically written as a tag, then attribute, value of the attribute, "contents", then the closing tag as seen below.
+					</p>
+					<p>
+						&lt;tag attr="value"&gt;contents&lt;/tag&gt;
+					</p>
+					<p>
+						A common example of a "tag" would be the <em>Anchor</em> (which establishes a link) - &lt;a&gt; </p>
+					<p>
+						A second example is the Image tag -&lt;img&gt;
+					</p>
+					<p>
+						&lt;img src="url" alt="text"&gt;<br>
+						<img src="http://image.slidesharecdn.com/htmlintrowithbasics-140902231824-phpapp01/95/html-basic-tags-10-638.jpg?cb=1409718053" alt="Have you seen my marbles?">
+					</p>
+					<p>
+						Since images don't have any contents they are considered a "void tag", and thus don't have a closing tag.
+					</p>
+					<p>
+						A video demonstrating <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48508417/m-48723411">HTML Attributes</a>.<br>
+					</p>
+				</div>
+				<div class="h3">Whitespace</div>
+				<div class="text">
+					<p>
+						An interesting fact about HTML is that the computer does not recognize "space" in it's traditional role.
+						No matter how many "spaces" an individual may type into a line, the computer only codes it as 1 gap until the next character.
+						Some common ways to reflect spacing, or dropping down to a new line include the break, and paragraph tags. There are essentially two forms of formatting, <em>inline,</em> and<em> block</em>.
+					</p>
+					<p>
+						The easiest way I found to remember this is that The block examples are structural elements, while the inline elements are text-based.
+					</p>
+					<p>
+						<b>&lt;br&gt;</b> - break gives you whitespace so lines don't run on together, since the break tag has no content, it is a void tag.
+						It is considered an inline tag as it is text based and not structural.
+					</p>
+					<p>
+						<b>&lt;p&gt;</b>- paragraph is for block style of creating white space, and you can adjust height and width etc. Since there is content to block style, there are closing tags.
+					</p>
+					<p>
+						<a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723438">This link</a> will demonstrate a deeper understanding than I have of <em>Inline vs. Block</em> formatting.
+					</p>
+				</div>
+			</div>
+			<div class="h2">Unit 1 Lesson 2: HTML with Panache</div>
+				<div class="h3">HTML vs. CSS vs. DOM</div>
+				<div class="text">
+					<p>
+						Watch while <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3555039510/m-2596138815">the differences (and connections) between the 3</a> are explained.
+					</p>
+					<p>
+						<em>HyperText Markup Language (HTML)</em> is the standard markup language used to create web pages. Think of HTML as the structure and layout of the house you are living in.
+						It defines where and how the page is laid out, and set up, similar to the layout of your house.
+					</p>		
+					<p>
+						<em>Cascading Style Sheets (CSS)</em> is the most common language used for describing the look and formatting of a document written in a markup language.
+						Think of CSS as the interior design of your house. Does your house have hardwood flooring or carpet?
+						Do you have painted walls? Most of the "design elements" in your code are CSS.
+					</p>
+				</div>
+				<div class="h3">DOM</div>
+				<div class="text">
+					<p>
+						<em>Document Object Model (DOM)</em> is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. DOM is the treelike structure seen when opening development tools, but it actually looks more like a forest, which can contain more than one tree. DOM does not require that things are laid out like a tree (or forest), nor does it specify relationships between the trees in any way.
+					</p>
+					<p>
+						<img src="http://i60.tinypic.com/qno02v.png" alt="DOM Tree">
+					</p>
+					<p>
+						<a href="https://developer.apple.com/library/mac/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/ResourcesandtheDOM/ResourcesandtheDOM.html">Image removed here, from Apple developer forums.</a>
+					</p>
+				</div>
+				<div class="h3">Boxes, Boxes, and MOAR BOXES!</div>
+				<div class="text">
+					<p>
+					Unbeknown-st to me, and prior to watching <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3555039510/e-2608808598/m-2599508886">this video</a>, everything that you see on the web is just some fancy play on a rectangle! Your entire browser window is just made up of various boxes composed in certain ways using a manipulation of CSS and HTML to allow for a visually appealing user experience. 
+					</p>
+				</div>
+			<div class="h1">Unit 1 Lesson 3: Adding CSS Style to HTML Structure</div>
+				<div class="h2">CSS Syntax and Rules</div>
+				<div class="text">
+					<p>
+						CSS syntax has a different set of rules than HTML. The most basic way to break it down is that the syntax is a reflection of three parts. The first is the HTML element the CSS will apply too, the second is the CSS style title (property), and the third is the value of the second property.
+
+						Each HTML element can have multiple properties, and each property within that selector can have its own value. The syntax is contained within curly brackets, and seperated by a colon between the title and value. Multiple properties are separated by a semi colon. If a property has more than one value, use a comma to seperate them, and if it has more than one word, use qoutes.
+					</p>
+					<p>
+						Check out <a href="https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/e-2663568566/m-2616578593">this awesome video </a> to see CSS syntax in action explained by our instructor.
+					</p>
+				</div>
+				<div class="h2">Repetition</div>
+				<div class="text">
+					<p>
+						Practice may make perfect, but repetitition makes for lost productivity and hard to read code. One of the crowning achievments in increasing productivity through code writing is via the use of CSS. By writing a single block of CSS which can affect multiple HTML elements, we reduce the need for repeated code and enable for quick changes to the layout and structure of our pages!
+					</p>
+					<p>
+						<img src="http://www.cruisingdaytona.com/ebimage/LAT/0605.jpg" alt="Kiss">
+					</p>
+				</div>
+				<div class="h2">CTR Code-Test-Refine</div>
+				<div class="text">
+					<p>
+						1. Look for natural boxes in the layout of your design.<br>
+						2. Look for repetition in your page and how you can simplify it.<br>
+						3. Write your HTML.<br>
+						4. Apply your CSS.<br>
+						5. Fix the mistakes you made (cause you did).
+					</p>
+				</div>
+				<div class="h3">Various Gem's and Tidbits Worth Remembering</div>
+				<div class="text">
+					<p>
+						Computers are "stupid", though they can preform amazing feats of calculation, they only do so because they were told to by the program written for them. In general, any time you get frustrated you need to remember that it is behaving the way it is simply because you told it to behave that way!
+					</p>
+				</div>
+		</div>
+	<div class="footer">Copyright &copy; 2015 Thomas Hedy </div>
+	<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+	</p>
+	</body>
+</html>
+
+</body>
+
+</html>
